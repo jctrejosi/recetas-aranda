@@ -15,12 +15,12 @@
     top: 5rem;
     left: 10%;
 
-    @include breakpoint (sm) {
+    @include breakpoint(sm) {
       left: 15%;
       top: 5rem;
     }
 
-    @include breakpoint (lg) {
+    @include breakpoint(lg) {
       top: 10rem;
     }
   }
@@ -31,11 +31,11 @@
     font-size: 4rem;
     margin: 0;
 
-    @include breakpoint (sm) {
+    @include breakpoint(sm) {
       font-size: 4.5rem;
     }
 
-    @include breakpoint (lg) {
+    @include breakpoint(lg) {
       font-size: 3.8rem;
     }
   }
@@ -45,11 +45,11 @@
     font: 3.5rem $main-font;
     margin: -1.8rem 0;
 
-    @include breakpoint (sm) {
+    @include breakpoint(sm) {
       font-size: 3.8rem;
     }
 
-    @include breakpoint (lg) {
+    @include breakpoint(lg) {
       font-size: 3rem;
     }
   }

@@ -12,7 +12,7 @@
     font-size: 1.5rem;
     left: 2rem;
     position: relative;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 
     @include breakpoint(md) {
       font-size: 3rem;
@@ -32,13 +32,13 @@
     bottom: -1rem;
     max-width: 10rem;
 
-    @include breakpoint (md) {
+    @include breakpoint(md) {
       bottom: -2rem;
       right: 4rem;
       max-width: 20rem;
     }
 
-    @include breakpoint (lg) {
+    @include breakpoint(lg) {
       max-width: 30rem;
     }
   }

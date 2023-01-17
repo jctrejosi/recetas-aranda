@@ -1,26 +1,29 @@
-$screen-sm:                            569px !default;   // Small screen / phone
-$screen-md:                            769px !default;   // Medium screen / table
-$screen-lg:                            1025px !default;  // large screen / desktop
-$screen-xl:                            1250px !default;  //Extra large screen/wide desktop
+$screen-sm: 569px !default; // Small screen / phone
+$screen-md: 769px !default; // Medium screen / table
+$screen-lg: 1025px !default; // large screen / desktop
+$screen-xl: 1250px !default; //Extra large screen/wide desktop
 
-$light-color:                          #ffffff;                    //fff
-$practically-light-color:              darken($light-color, 10%);    //#e6e6e6
-$almost-light-color:                   darken($light-color, 20%);    //#ccc
-$nearly-light-color:                   darken($light-color, 30%);    //#b3b3b3
-$mid-light-color:                      darken($light-color, 40%);    //#999
-$mid-color:                            darken($light-color, 50%);    //#808080
-$mid-dark-color:                       darken($light-color, 60%);    //#666
-$nearly-dark-color:                    darken($light-color, 70%);    //#4d4d4d
-$almost-dark-color:                    darken($light-color, 80%);    //#333
-$practically-dark-color:               darken($light-color, 90%);    //#1a1a1a
-$dark-color:                           darken($light-color, 100%);   //#000
+$light-color: #ffffff; //fff
+$practically-light-color: darken($light-color, 10%); //#e6e6e6
+$almost-light-color: darken($light-color, 20%); //#ccc
+$nearly-light-color: darken($light-color, 30%); //#b3b3b3
+$mid-light-color: darken($light-color, 40%); //#999
+$mid-color: darken($light-color, 50%); //#808080
+$mid-dark-color: darken($light-color, 60%); //#666
+$nearly-dark-color: darken($light-color, 70%); //#4d4d4d
+$almost-dark-color: darken($light-color, 80%); //#333
+$practically-dark-color: darken($light-color, 90%); //#1a1a1a
+$dark-color: darken($light-color, 100%); //#000
 
-$red-color:                            #D84A4A;
-$blue-color:                           #425966;
-$agua-color-gradient:                  transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
-$background-card:                      transparent linear-gradient(360deg, $light-color 60%, #cee6ff 100%) 0% 0% no-repeat padding-box;
+$red-color: #d84a4a;
+$blue-color: #425966;
+$agua-color-gradient: transparent
+  linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0% 0% no-repeat padding-box;
+$background-card: transparent
+  linear-gradient(360deg, $light-color 60%, #cee6ff 100%) 0% 0% no-repeat
+  padding-box;
 
-$main-font:                            Monster;
-$custom-font:                          Arial;
+$main-font: Monster;
+$custom-font: Arial;
 
-$shadow:                               .1rem .5rem 1rem .1rem #9b9b9bb0;
+$shadow: 0.1rem 0.5rem 1rem 0.1rem #9b9b9bb0;
