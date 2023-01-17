@@ -4,11 +4,10 @@ import type { link } from "./types";
 import "./styles.scss";
 
 interface props {
-  icon: string;
   links: link[];
 }
 
-function HeaderNavbar({ icon, links }: props): ReactElement {
+function HeaderNavbar({ links }: props): ReactElement {
   const items = links.map((item) => {
     return (
       <li
@@ -21,7 +20,8 @@ function HeaderNavbar({ icon, links }: props): ReactElement {
   });
   return (
     <div className="header">
-      <img src={icon} alt="Logo de la empresa" className="header__logo" />
+      <p className="header__slogan--primary">Recipe</p>
+      <p className="header__slogan--secondary">App</p>
       <ul className="header__items">{items}</ul>
       <img src={iconHome} alt="home" className="header__home" />
     </div>

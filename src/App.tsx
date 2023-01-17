@@ -8,10 +8,7 @@ import "./styles/main.scss";
 function App() {
   return (
     <div className="main-container">
-      <HeaderNavbar
-        icon="https://dummyimage.com/300x60/000/fff"
-        links={links}
-      />
+      <HeaderNavbar links={links} />
       <Background title="Recetas" subtitle="para todos" image={bgImage} />
     </div>
   );
