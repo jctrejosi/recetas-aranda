@@ -1,0 +1,17 @@
+$breakpoints: (
+  xl:     '(min-width: #{$screen-xl})',
+  lg:     '(min-width: #{$screen-lg})',
+  md:     '(min-width: #{$screen-md})',
+  sm:     '(min-width: #{$screen-sm})',
+);
+
+@mixin breakpoint($device) {
+
+  @if not map-has-key($breakpoints, $device) {
+    @error 'Device value (#{$device}) is unknown';
+  }
+
+  @media #{map-get($breakpoints, $device)} {
+    @content;
+  }
+}
