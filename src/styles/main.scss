@@ -6,3 +6,8 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: "Monster";
+  src: local("sans"), url(../assets/fonts/MonsterClubhouse.ttf) format("truetype");
+}
