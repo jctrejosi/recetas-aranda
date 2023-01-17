@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.header {
+  display: flex;
+  padding: 0 3rem;
+
+  &__items {
+    display: none;
+    flex: 1;
+    justify-content: right;
+    list-style: none;
+
+    @include breakpoint(lg) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    margin: 0 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--active {
+      color: $red-color;
+    }
+  }
+
+  &__home {
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+}
