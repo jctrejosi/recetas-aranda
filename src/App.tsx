@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import HeaderNavbar from "./components/HeaderNavbar/HeaderNavbar";
 import Background from "./components/Background/Background";
@@ -18,14 +18,17 @@ const key = "c142b191cf9549ba886935dd216a4efc";
 function App() {
   const dispatch = useAppDispatch();
 
-  axios
-    .get(
-      `https://api.spoonacular.com/recipes/random?number=${number}&apiKey=${key}`
-    )
-    .then((response) => {
-      dispatch(updateRecipes(response.data.recipes));
-    })
-    .catch((e) => console.log(e));
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.spoonacular.com/recipes/random?number=${number}&apiKey=${key}`
+      )
+      .then((response) => {
+        dispatch(updateRecipes(response.data.recipes));
+        console.log(response.data.recipes);
+      })
+      .catch((e) => console.log(e));
+  }, []);
 
   const recetas = useAppSelector(setRecipes);
 
