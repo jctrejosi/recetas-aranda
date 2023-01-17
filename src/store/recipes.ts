@@ -1,16 +1,17 @@
 /* eslint-disable */
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { card } from "../components/RecipesCards/types";
 import type { RootState } from "./index";
 
 export const recipesSlice = createSlice({
   name: "recipes",
 
   initialState: {
-    value: [] as object[],
+    value: [] as card[],
   },
 
   reducers: {
-    updateRecipes: (state, action: PayloadAction<object[]>) => {
+    updateRecipes: (state, action: PayloadAction<card[]>) => {
       state.value = action.payload;
     },
   },
