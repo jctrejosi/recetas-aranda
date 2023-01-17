@@ -18,6 +18,7 @@ $dark-color:                           darken($light-color, 100%);   //#000
 $red-color:                            #D84A4A;
 $blue-color:                           #425966;
 $agua-color-gradient:                  transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+$background-card:                      transparent linear-gradient(360deg, $light-color 60%, #cee6ff 100%) 0% 0% no-repeat padding-box;
 
 $main-font:                            Monster;
 $custom-font:                          Arial;
