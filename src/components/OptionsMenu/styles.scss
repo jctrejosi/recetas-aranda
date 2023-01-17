@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.options {
+  display: flex;
+  position: relative;
+
+  @include breakpoint (lg) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: -5rem;
+    z-index: 1;
+  }
+
+  &__item {
+    align-items: center;
+    background-color: $light-color;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    justify-content: flex-end;
+    margin: 0 .5rem;
+    padding: .5rem;
+    transition: background-color .3s;
+    width: 7rem;
+
+    &:hover {
+      background-color: $practically-light-color;
+    }
+
+    &--text {
+      color: $blue-color;
+      font-family: $custom-font;
+      font-size: 1rem;
+      font-weight: 550;
+      line-height: .2;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

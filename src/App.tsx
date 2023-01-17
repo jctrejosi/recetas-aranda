@@ -3,7 +3,8 @@ import axios from "axios";
 import HeaderNavbar from "./components/HeaderNavbar/HeaderNavbar";
 import Background from "./components/Background/Background";
 import Footer from "./components/Footer/Footer";
-import { links } from "./content";
+import Options from "./components/OptionsMenu/OptionsMenu";
+import { links, options } from "./content";
 import bgImage from "./assets/bcq.jpg";
 import footerImage from "./assets/Grupo7610.png";
 import "./styles/main.scss";
@@ -25,6 +26,7 @@ function App() {
     <div className="main-container">
       <HeaderNavbar links={links} />
       <Background title="Recetas" subtitle="para todos" image={bgImage} />
+      <Options options={options} />
       <Footer slogan="Con el Patrocinio de" image={footerImage} />
     </div>
   );
