@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.footer {
+  background: $agua-color-gradient;
+  display: flex;
+  position: relative;
+
+  &__slogan {
+    color: $blue-color;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    left: 2rem;
+    position: relative;
+    margin: .5rem 0;
+
+    @include breakpoint(md) {
+      font-size: 3rem;
+      left: 4rem;
+      margin: 1rem 0;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 3.5rem;
+      margin: 2.5rem 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 1rem;
+    bottom: -1rem;
+    max-width: 10rem;
+
+    @include breakpoint (md) {
+      bottom: -2rem;
+      right: 4rem;
+      max-width: 20rem;
+    }
+
+    @include breakpoint (lg) {
+      max-width: 30rem;
+    }
+  }
+}
