@@ -4,13 +4,24 @@
 .cards {
   position: relative;
   height: 40rem;
-  padding: 0 4rem;
+  padding: 0 .3rem;
+
+  @include breakpoint (sm) {
+    padding: 0 4rem;
+  }
 
   &__title {
     color: $red-color;
     font-family: $main-font;
-    font-size: 4rem;
-    padding: 2rem 2rem 0;
+    font-size: 3rem;
+    padding: 8rem 0 0;
+    margin-left: 1rem;
+
+    @include breakpoint (sm) {
+      margin-left: 0;
+      font-size: 4rem;
+      padding: 2rem 2rem 0;
+    }
 
     @include breakpoint (lg) {
       padding: 0 2rem 0;
@@ -21,11 +32,16 @@
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    width: 85%;
+    width: 100%;
     position: absolute;
     overflow-x: auto;
     padding: 4rem 0 1rem;
-    top: 7rem;
+    top: 10rem;
+
+    @include breakpoint (sm) {
+      top: 7rem;
+      width: 85%;
+    }
 
     @include breakpoint (lg) {
       top: 10rem;
@@ -42,16 +58,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 1rem;
-    max-width: 15rem;
-    min-width: 15rem;
+    margin: 0 .5rem;
+    max-width: 10rem;
+    min-width: 10rem;
     height: 10rem;
-    padding: 6rem 1rem 1rem;
+    padding: 2rem 1rem 1rem;
     position: relative;
     top: 0;
 
+    @include breakpoint (sm) {
+      margin: 0 1rem;
+      max-width: 15rem;
+      min-width: 15rem;
+      padding: 6rem 1rem 1rem;
+    }
+
     &:hover {
       height: auto;
+      padding: 4rem 1rem 1rem;
+
+      @include breakpoint (sm) {
+        padding: 6rem 1rem 1rem;
+      }
     }
 
     .close {
@@ -71,12 +99,17 @@
     &--image {
       border-radius: 50%;
       box-shadow: $shadow;
-      height: 8rem;
+      height: 6rem;
       object-fit: cover;
       position: absolute;
       top: -3rem;
-      width: 8rem;
+      width: 6rem;
       z-index: 3;
+
+      @include breakpoint (sm) {
+        height: 8rem;
+        width: 8rem;
+      }
     }
 
     &--titles {
@@ -90,7 +123,7 @@
       color: $red-color;
       font-family: $custom-font;
       font-size: 1rem;
-      max-width: 50%;
+      max-width: 45%;
       padding: 0 .3rem;
       text-align: center;
     }
@@ -99,7 +132,7 @@
       color: $red-color;
       font-family: $main-font;
       font-size: 1.4rem;
-      max-width: 50%;
+      max-width: 45%;
       padding: 0 .3rem;
       text-align: center;
     }
