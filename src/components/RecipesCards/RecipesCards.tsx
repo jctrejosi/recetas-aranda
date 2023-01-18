@@ -27,7 +27,7 @@ function RecipesCards({ cards, title }: props): ReactElement {
           <img src={item.image} alt="" className="cards__item--image" />
         </div>
         <div className={`cards__item--titles ${show ? "close" : "open"}`}>
-          <p className="cards__item--title">{item.title}</p>
+          <p className="cards__item--title">{item.title.slice(0, 15)}</p>
           <p className="cards__item--subtitle">{item.sourceName}</p>
         </div>
         <div className={`cards__item--calification ${show ? "close" : "open"}`}>
