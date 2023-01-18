@@ -4,14 +4,13 @@
 .cards {
   position: relative;
   height: 40rem;
-  width: 100%;
+  padding: 0 4rem;
 
   &__title {
     color: $red-color;
     font-family: $main-font;
     font-size: 4rem;
-    margin-left: 4rem;
-    padding: 6rem 2rem 0;
+    padding: 2rem 2rem 0;
 
     @include breakpoint (lg) {
       padding: 0 2rem 0;
@@ -21,15 +20,17 @@
   &__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     list-style: none;
-    max-width: 100%;
-    padding-bottom: 7rem;
-    padding-left: 0;
-    padding-top: 4rem;
+    width: 85%;
     position: absolute;
-    width: 90%;
-    left: 5%;
+    overflow-x: auto;
+    padding: 4rem 0 1rem;
+    top: 7rem;
+
+    @include breakpoint (lg) {
+      top: 10rem;
+      width: 100%;
+    }
   }
 
   &__item {
@@ -44,13 +45,13 @@
     margin: 0 1rem;
     max-width: 15rem;
     min-width: 15rem;
-    max-height: 10rem;
+    height: 10rem;
     padding: 6rem 1rem 1rem;
     position: relative;
     top: 0;
 
     &:hover {
-      max-height: 100%;
+      height: auto;
     }
 
     .close {
@@ -82,7 +83,7 @@
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
-      max-height: 6rem;
+      height: 6rem;
     }
 
     &--title {
