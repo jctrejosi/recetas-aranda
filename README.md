@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Resources used
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+For the creation of the web it was used:
+
+- Redux with redux toolkit for the creation of the reducer handler of the recipe data, the store files can be found in src/store.
+
+- For the query API, axios was used, to consult the api https://api.spoonacular.com/recipes/random, the query is made in the App.tsx component, which launches an event to update the store.
 
 ## Available Scripts
 
