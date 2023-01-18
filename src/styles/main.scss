@@ -1,10 +1,12 @@
 .main-container {
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
 body {
   margin: 0;
+  position: relative;
 }
 
 @font-face {
